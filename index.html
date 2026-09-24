@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Panel Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+<div class="particles" id="particles"></div>
+
+<header class="header">
+  <a class="brand" href="#">NEX<span>ZONE</span></a>
+  <nav>
+    <a href="#panels">Panels</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="secure-btn" href="#panels">VIEW PANELS</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-badge">GAME PANEL STORE</div>
+    <h1>Choose Your <span>Panel</span></h1>
+    <p>Premium game-related panels for Mobile, PC and iOS.</p>
+    <a class="hero-btn" href="#panels">EXPLORE PANELS <span>↓</span></a>
+  </section>
+
+  <section class="panel-section" id="panels">
+    <div class="section-heading">
+      <span>AVAILABLE PLATFORMS</span>
+      <h2>SELECT YOUR PLATFORM</h2>
+    </div>
+
+    <div class="panel-grid">
+
+      <article class="panel-card mobile-card">
+        <div class="card-glow"></div>
+        <div class="platform-icon mobile-icon">▯</div>
+        <h3>Mobile Panel</h3>
+        <p>The best mobile panel for your game account</p>
+
+        <button class="details-btn" onclick="toggleCard(this)">
+          <span>SEE DETAILS</span><b>⌄</b>
+        </button>
+
+        <div class="details">
+          <div class="feature-list">
+            <div>Fast &amp; lightweight</div>
+            <div>Mobile optimized</div>
+            <div>Easy access</div>
+          </div>
+          <div class="price-box">
+            <div class="price-title">PRICE LIST</div>
+            <div class="price-row"><span>40 days</span><strong>৳ 390</strong></div>
+            <div class="price-row"><span>3 months</span><strong>৳ 520</strong></div>
+            <div class="price-row"><span>6 months</span><strong>৳ 690</strong></div>
+            <div class="price-row"><span>Lifetime</span><strong>৳ 1190</strong></div>
+          </div>
+          <button class="buy-btn" onclick="selectPanel('Mobile Panel')">SELECT MOBILE</button>
+        </div>
+      </article>
+
+      <article class="panel-card pc-card">
+        <div class="card-glow"></div>
+        <div class="platform-icon pc-icon">▱</div>
+        <h3>PC Panel</h3>
+        <p>High-performance PC panel</p>
+
+        <button class="details-btn" onclick="toggleCard(this)">
+          <span>SEE DETAILS</span><b>⌄</b>
+        </button>
+
+        <div class="details">
+          <div class="feature-list">
+            <div>High performance</div>
+            <div>PC optimized</div>
+            <div>Simple interface</div>
+          </div>
+          <div class="price-box">
+            <div class="price-title">PRICE LIST</div>
+            <div class="price-row"><span>1 month</span><strong>৳ 850</strong></div>
+            <div class="price-row"><span>Lifetime</span><strong>৳ 2490</strong></div>
+          </div>
+          <button class="buy-btn" onclick="selectPanel('PC Panel')">SELECT PC</button>
+        </div>
+      </article>
+
+      <article class="panel-card ios-card">
+        <div class="card-glow"></div>
+        <div class="platform-icon ios-icon">⌁</div>
+        <h3>IOS Panel</h3>
+        <p>Premium iOS Panel</p>
+
+        <button class="details-btn" onclick="toggleCard(this)">
+          <span>SEE DETAILS</span><b>⌄</b>
+        </button>
+
+        <div class="details">
+          <div class="feature-list">
+            <div>iOS optimized</div>
+            <div>Premium interface</div>
+            <div>Easy setup</div>
+          </div>
+          <div class="price-box">
+            <div class="price-title">PRICE LIST</div>
+            <div class="price-row"><span>1 month</span><strong>৳ 750</strong></div>
+            <div class="price-row"><span>3 months</span><strong>৳ 990</strong></div>
+            <div class="price-row"><span>5 months</span><strong>৳ 1250</strong></div>
+            <div class="price-row"><span>Lifetime</span><strong>৳ 1990</strong></div>
+          </div>
+          <button class="buy-btn" onclick="selectPanel('IOS Panel')">SELECT IOS</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="info" id="about">
+    <div>
+      <span>WHY CHOOSE US</span>
+      <h2>One Store. Three Platforms.</h2>
+    </div>
+    <p>Browse the panel category that matches your device. Each card can be expanded to show features and pricing.</p>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="footer-brand">NEX<span>ZONE</span></div>
+  <div>Game Panel Store • Mobile • PC • iOS</div>
+  <div class="footer-links"><a href="#panels">Panels</a><a href="#">Terms</a><a href="#">Support</a></div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
